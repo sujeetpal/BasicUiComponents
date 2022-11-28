@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Name"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:checked="false"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Interests"
+            android:layout_below="@id/radioGroup"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/interest"
+            />
+        <CheckBox
+            android:id="@+id/aiml"
+            android:layout_below="@id/interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="AI/ML"/>
+
+        <CheckBox
+            android:id="@+id/web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Web"
+            android:layout_below="@id/aiml"/>
+
+        <CheckBox
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Mobile"
+            android:layout_below="@id/web"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date of Birth"
+            android:layout_below="@id/mobile"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/dob"
+            />
+
+        <DatePicker
+            android:id="@+id/dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dob"
+            android:layout_marginLeft="40dp" />
+
+        <Button
+            android:id="@+id/send_button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="150dp"
+            android:text="send"
+            android:layout_below="@id/dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</ScrollView>
